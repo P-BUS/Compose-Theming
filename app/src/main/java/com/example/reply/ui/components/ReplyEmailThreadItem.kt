@@ -47,11 +47,17 @@ fun ReplyEmailThreadItem(
     Column(
         modifier = modifier
             .fillMaxWidth()
+            .padding(8.dp)
+            .background(
+                color = MaterialTheme.colorScheme.background,
+                shape = MaterialTheme.shapes.medium
+            )
             .padding(16.dp)
-            .padding(20.dp)
-            .background(MaterialTheme.colorScheme.background)
     ) {
-        Row(modifier = Modifier.fillMaxWidth()) {
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+        ) {
             ReplyProfileImage(
                 drawableResource = email.sender.avatar,
                 description = email.sender.fullName,

@@ -128,6 +128,7 @@ fun ReplyTheme(
     MaterialTheme(
         colorScheme = replyColorScheme,
         content = content,
-        typography = typography
+        typography = typography,
+        shapes = shapes
     )
 }
